@@ -33,7 +33,9 @@ public class Jyanken_Chapter28 {
 
 	public String getRandom() {
 		 String[] hands = {"r", "s", "p"};
-		 return hands[(int)(Math.random() * 3)];
+		 int index = (int)Math.floor(Math.random() * hands.length);
+
+		    return hands[index];
 		
 	}
 	
